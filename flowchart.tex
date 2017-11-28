@@ -26,7 +26,9 @@
 \begin{tikzpicture}[node distance=2cm]
 
 \node (start) [startstop] {Start};
-\node (in1) [io, below of=start] {Input};
+\node () [io, below of=start, yshift=+0.2cm, xshift=+0.2cm] {Inputs};
+\node () [io, below of=start, yshift=+0.1cm, xshift=+0.1cm] {Inputs};
+\node (in1) [io, below of=start] {Inputs};
 \node (pro1) [process, below of=in1] {Process 1};
 \node (dec1) [decision, below of=pro1, yshift=-0.5cm] {Decision 1};
 \node (pro2a) [process, below of=dec1, yshift=-0.5cm] {Process 2a};
